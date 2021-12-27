@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Dec 27 07:57:56 2021
+# Make data base, printed on Mon Dec 27 09:01:30 2021
 
 # Variables
 
@@ -107,7 +107,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 98333
+GIO_LAUNCHED_DESKTOP_FILE_PID = 101579
 # automatic
 %F = $(notdir $%)
 # environment
@@ -159,7 +159,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-dc0f8d1c-84e9-4273-b194-942bca1c7f92.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8e0e2928-3832-413e-aef6-9f62f87fd944.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -209,6 +209,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 LC_MEASUREMENT = ru_RU.UTF-8
 # environment
+ 
 LC_ALL = C
 # environment
 QT4_IM_MODULE = ibus
@@ -233,7 +234,7 @@ LC_ADDRESS = ru_RU.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 98333
+VSCODE_PID = 101579
 # variable set hash-table stats:
 # Load=111/1024=11%, Rehash=0, Collisions=19/133=14%
 
@@ -243,9 +244,9 @@ VSCODE_PID = 98333
 
 # Directories
 
-# . (device 2053, inode 399714): 20 files, no impossibilities.
+# . (device 2053, inode 399714): 21 files, no impossibilities.
 
-# 20 files, no impossibilities in 1 directories.
+# 21 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -288,7 +289,6 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
- 
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
@@ -296,12 +296,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 28 / storage = 252 B / avg = 9 B
-# current buf: size = 8162 B / used = 252 B / count = 28 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 257 B / avg = 8 B
+# current buf: size = 8162 B / used = 257 B / count = 29 / avg = 8 B
 
-# strcache performance: lookups = 31 / hit rate = 9%
+# strcache performance: lookups = 32 / hit rate = 9%
 # hash-table stats:
-# Load=28/8192=0%, Rehash=0, Collisions=1/31=3%
-# Finished Make data base on Mon Dec 27 07:57:56 2021
+# Load=29/8192=0%, Rehash=0, Collisions=1/32=3%
+# Finished Make data base on Mon Dec 27 09:01:30 2021
 
  

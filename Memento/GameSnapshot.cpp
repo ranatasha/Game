@@ -152,14 +152,14 @@ void GameSnapshot::RestoreState(GameState* origState){
                     if(x_enemy>=1 && x_enemy<=18 && y_enemy>=1 && y_enemy<=18){
                         if(loader>>type_enemy){
                             switch (type_enemy){
-                                case CAT:
+                                case 1:
                                     if(loader>>h_enemy>>d_enemy){
                                         cat = new Cat(x_enemy,y_enemy,h_enemy,d_enemy);
                                         new_map->getFieldPtr()[y_enemy][x_enemy].setEntity(cat);
                                         new_enemies.push_back(cat);
                                     }
                                     break;
-                                case OWL:
+                                case 2:
                                     if(loader>>h_enemy>>d_enemy){
                                             owl = new Owl(x_enemy,y_enemy,h_enemy,d_enemy);
                                             new_map->getFieldPtr()[y_enemy][x_enemy].setEntity(owl);
@@ -167,7 +167,7 @@ void GameSnapshot::RestoreState(GameState* origState){
                                     }
                                     break;
 
-                                case ZOMBIE:
+                                case 3:
                                     if(loader>>h_enemy>>d_enemy){
                                             zombie = new Zombie(x_enemy,y_enemy,h_enemy,d_enemy);
                                             new_map->getFieldPtr()[y_enemy][x_enemy].setEntity(zombie);
@@ -198,18 +198,18 @@ void GameSnapshot::RestoreState(GameState* origState){
                 if(loader>>x_item>>y_item){
                     if(loader>>type_item){
                         switch (type_item){
-                            case CHEESE:
+                            case 0:
                                 cheese = new Cheese(x_item,y_item);
                                 new_map->getFieldPtr()[y_item][x_item].setEntity(cheese);
                                 new_items.push_back(cheese);
                                 break;
-                            case SWORD:
+                            case 2:
                                 sword = new Sword(x_item,y_item);
                                 new_map->getFieldPtr()[y_item][x_item].setEntity(sword);
                                 new_items.push_back(sword);
                                 break;
 
-                            case KEY:
+                            case 1:
                                 key = new Key(x_item,y_item);
                                 new_map->getFieldPtr()[y_item][x_item].setEntity(key);
                                 new_items.push_back(key);
@@ -251,5 +251,4 @@ void GameSnapshot::changeState(GameState* origState){
     origState->new_items.clear();
     for(std::list<Item*>::iterator item = loadedState->new_items.begin(); item!=loadedState->new_items.end();++item)
 		origState->new_items.push_back(*item);
-
 }
