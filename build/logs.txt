@@ -1,0 +1,54 @@
+[PLAYER_DAMAGE] I took a sword! My damage is grew up!
+Player --> Health: 10; Damage: 6; HasKey?: 0
+
+[PLAYER_HEALTH] I took cheese! My health is grew up!
+Player --> Health: 20; Damage: 6; HasKey?: 0
+
+
+~ YOU NEED TO HAVE AN EXIT KEY. TAKE IT AND TRY AGAIN ~
+Player --> Health: 20; Damage: 6; HasKey?: 0
+
+
+~ YOU NEED TO KILL ... ENEMIES. COMPLETE THE MISSION AND TRY AGAIN ~
+Player --> Health: 20; Damage: 6; HasKey?: 0
+
+
+~ YOU NEED TO HAVE AN EXIT KEY and TO KILL ... ENEMIES. TRY AGAIN ~
+Player --> Health: 20; Damage: 6; HasKey?: 0
+
+
+~ YOU NEED TO HAVE AN EXIT KEY. TAKE IT AND TRY AGAIN ~
+Player --> Health: 20; Damage: 6; HasKey?: 0
+
+
+~ YOU NEED TO KILL ... ENEMIES. COMPLETE THE MISSION AND TRY AGAIN ~
+Player --> Health: 20; Damage: 6; HasKey?: 0
+
+
+~ YOU NEED TO HAVE AN EXIT KEY and TO KILL ... ENEMIES. TRY AGAIN ~
+Player --> Health: 20; Damage: 6; HasKey?: 0
+
+[PLAYER_KEY] I took a key!
+Player --> Health: 20; Damage: 6; HasKey?: 1
+
+
+~ YOU NEED TO KILL ... ENEMIES. COMPLETE THE MISSION AND TRY AGAIN ~
+Player --> Health: 20; Damage: 6; HasKey?: 1
+
+
+~ YOU NEED TO KILL ... ENEMIES. COMPLETE THE MISSION AND TRY AGAIN ~
+Player --> Health: 20; Damage: 6; HasKey?: 1
+
+[ENEMY_FIGHT] Oh, Player hit me!
+Zombie --> Health: 6; Damage: 3
+
+[PLAYER] Oh, Zombie hit me!
+Player --> Health: 17; Damage: 6; HasKey?: 1
+
+[ENEMY_KILLED] Oh, Player killed me!
+Zombie --> Health: 0; Damage: 3
+
+
+~[WIN] MISSION COMPLETED! YOU ARE A WINNER! OUR CONGRATULATIONS :D ~
+Player --> Health: 17; Damage: 6; HasKey?: 1
+
